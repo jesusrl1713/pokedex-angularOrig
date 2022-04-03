@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Press+Start+2P&display=swap');
+
+.banner{
+    background-repeat: no-repeat;
+    background: center;
+    position: relative;
+}
+.imgTarj{
+    float:inline-end;
+    width: 50px;
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+.listTi{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  
+}
+.texto-encima h2{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 17px;
+}
+.textOrde{
+    color: white;
+    font-size: 10px;
+    width: 50%;
+    float: left;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-custom {
+    overflow: hidden;
+    min-height: 450px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  }
+  
+  .card-custom-img {
+    height: 200px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+  }
+  
+  .card-custom-img::after {
+    position: absolute;
+    content: '';
+    top: 161px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 40px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 545px;
+    border-left-width: calc(575px - 5vw);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+  }
+  
+  .card-custom-avatar img {
+    background: none;
+    border-radius: 10%;
+    position: absolute;
+    top: 80px;
+    left: 40%;
+    width: 120px;
+    height: 130px;
+  }
+  .listTicard{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .textBio{
+    font-family: 'Anybody', cursive;
+    font-size: 12px;
+  }
+  
+
+
+@media only screen and (max-width: 730px) {
+
+    .texto-encima h2{
+        font-family: 'Anybody', cursive;
+        color: white;
+        font-size: 16px;
+    }
+    .textOrde{
+        width: 50%;
+        float: left;
+        color: white;
+        font-size: 8px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .texto-encima h2{
+        font-family: 'Anybody', cursive;
+        color: white;
+        font-size: 17px;
+    }
+    .textOrde{
+        width: 45%;
+        float: left;
+        color: white;
+        font-size: 5px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .texto-encima h2{
+        font-family: 'Anybody', cursive;
+        color: white;
+        font-size: 17px;
+    }
+    .textOrde{
+        width: 45%;
+        float: left;
+        color: white;
+        font-size: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 574px) {
+
+    .texto-encima h2{
+        font-family: 'Anybody', cursive;
+        color: white;
+        font-size: 17px;
+    }
+    .textOrde{
+        width: 50%;
+        float: left;
+        color: white;
+        font-size: 8px;
+    }
+
+}
+@media only screen and (max-width: 498px) {
+
+    .texto-encima h2{
+        font-family: 'Anybody', cursive;
+        color: white;
+        font-size: 13px;
+    }
+    .textOrde{
+        width: 50%;
+        float: left;
+        color: white;
+        font-size: 6px;
+    }
+    .card-custom-avatar img {
+        top: 80px;
+        left: 30%;
+        width: 120px;
+        height: 120px;
+      }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .texto-encima h2{
+        font-family: 'Anybody', cursive;
+        color: white;
+        font-size: 12px;
+    }
+    .textOrde{
+        width: 50%;
+        float: left;
+        color: white;
+        font-size: 5px;
+    }
+    .card-custom-avatar img {
+      top: 80px;
+      left: 30%;
+      width: 120px;
+      height: 120px;
+    }
+ 
+
+}
+
