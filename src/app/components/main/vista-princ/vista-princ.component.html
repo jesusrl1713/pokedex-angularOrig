@@ -1,5 +1,4 @@
-<body>
-    
+<main>
 <div class="grey-bg container-fluid banner">
     <section id="minimal-statistics">
     <div class="row">
@@ -11,165 +10,38 @@
       <div class="row">
 
         <!--Tarjeta 1-->
-        <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">
-        <div class="card">
-          <img class="card-img-top" src="../../../../assets/1.png" alt="">
-          <div class="texto-encima"><h2>Bulbasaur</h2>
-            <p class="textOrde">Es un Pokémon de tipo planta/veneno introducido en la primera generación. </p>
-          </div>
-        </div>
-        </a>
-       </div>
-       
-
-      <!--Tarjeta 2-->
-        <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-          <a href="">
-        <div class="card tarjImg">
-          <img class="card-img-top" src="../../../../assets/2.png" alt="">
-          <div class="texto-encima"><h2>Charmander</h2>
-            <p class="textOrde">Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.</p>
-          </div>
-        </div>
-          </a>
-        </div>
-
-         <!--Tarjeta 3 -->
-        <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-            <a href="">
-          <div class="card tarjImg">
-            <img class="card-img-top" src="../../../../assets/3.png" alt="">
-            <div class="texto-encima"><h2>Pikachu</h2>
-              <p class="textOrde">Es el Pokémon más conocido de la historia, mayormente por ser el acompañante del protagonista del anime, Ash Ketchum</p>
+      <div class="col-xl-4 col-sm-6 col-6 p-2" *ngFor="let pokemon of pokemons | paginate: {itemsPerPage: 12, currentPage: pageActual }"> 
+        <a type="button" style="cursor: pointer;" [routerLink]="['/detalles/' + pokemon.name,pokemon.id]" (click)="getPokemon()" >
+          <div class="card mb-3 rounded-5" style="max-width: 540px; background-image: url('../../../../assets/cardfondo.png'); background-size:cover; background-repeat: no-repeat;">
+            <div class="row g-0">
+              <div class="col-md-7 col-8">
+                <div class="card-body">
+                  <h2 class="card-title texto-encima">{{pokemon.name}}</h2>
+                  <br> <br>
+                  <p class="card-text text-tarje">Este pokemon tiene la diferentes caracteristicas.</p>
+                  <p class="card-text"><span class="badge bg-light text-dark ms-1"># {{pokemon.id}}</span></p>       
+                </div>
+              </div>
+              <div class="col-md-4 col-4 mt-4">
+                <img src="{{pokemon.sprites.front_default}}" style="width: 130px; height: 130px;" class="img-fluid rounded-start" alt="...">
+              </div>
             </div>
           </div>
-            </a>
-        </div>
 
-         <!--Tarjeta 4 -->
-        <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-          <a href="">
-        <div class="card tarjImg">
-          <img class="card-img-top" src="../../../../assets/4.png" alt="">
-          <div class="texto-encima"><h2>Chikorita</h2>
-            <p class="textOrde">Es uno de los tres Pokémon iniciales que se pueden elegir al comenzar la aventura en la región</p>
-          </div>
-        </div>
-          </a>
-        </div>
-
-        <!--Tarjeta 5 -->
-        <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-          <a href="">
-        <div class="card tarjImg">
-          <img class="card-img-top" src="../../../../assets/5.png" alt="">
-          <div class="texto-encima"><h2>Skitty</h2>
-            <p class="textOrde">Está basado en un gato y en una cola de zorro o un alfiletero, Su cuerpo es principalmente de color rosa.</p>
-          </div>
-        </div>
-          </a>
-        </div>
-
-      <!--Tarjeta 6 -->
-      <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-        <a href="">
-      <div class="card tarjImg">
-        <img class="card-img-top" src="../../../../assets/6.png" alt="">
-        <div class="texto-encima"><h2>Meowth</h2>
-          <p class="textOrde">Es un Pokémon con apariencia de gato, y está basado en el Maneki-neko (gato de la suerte japonés).</p>
-        </div>
-      </div>
         </a>
+         
+      </div>
+      </div>
       </div>
 
-      <!--Tarjeta 7 -->
-      <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-        <a href="">
-      <div class="card rounded-10">
-        <img class="card-img-top" src="../../../../assets/7.png" alt="">
-        <div class="texto-encima"><h2>Fletchling</h2>
-          <p class="textOrde">Tiene la cabeza de color rojo anaranjado y el resto de su cuerpo gris claro, a excepción de su cola.</p>
-        </div>
-      </div>
-        </a>
-      </div>
-
-    <!--Tarjeta 8 -->
-      <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-        <a href="">
-      <div class="card rounded-10">
-        <img class="card-img-top" src="../../../../assets/8.png" alt="">
-        <div class="texto-encima"><h2>Piplup</h2>
-          <p class="textOrde">Es un Pokémon de tipo planta/veneno introducido en la primera generación. </p>
-        </div>
-      </div>
-        </a>
-      </div>
-
-      <!--Tarjeta 9 -->
-      <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-        <a href="">
-      <div class="card rounded-10">
-        <img class="card-img-top" src="../../../../assets/9.png" alt="">
-        <div class="texto-encima"><h2>Jigglypuff</h2>
-          <p class="textOrde">es un Pokémon de tipo normal/hada.</p>
-        </div>
-      </div>
-        </a>
-      </div>
-
-      <!--Tarjeta 10 -->
-      <div class="col-xl-4 col-sm-6 col-6 p-2"> 
-        <a href="">
-      <div class="card tarjImg">
-        <img class="card-img-top" src="../../../../assets/10.png" alt="">
-        <div class="texto-encima"><h2>Cyndaquil</h2>
-          <p class="textOrde">Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Johto,</p>
-        </div>
-      </div>
-        </a>
-      </div>
-        </div>
-        </div>
     </section>
+    <div class="container h-100 mt-4 text-center">
+      <pagination-controls 
+      (pageChange)="pageActual = $event"
+      previousLabel="Anterior"
+      nextLabel="Siguiente">
+  </pagination-controls>
   </div>
+</div>
 
-</body>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header img" style="background-image: url(images/bg-1.jpg);">
-        <button type="button" class="close d-flex align-items-center justify-content-center " data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="bi bi-x-circle" ></span>
-        </button>
-      </div>
-      <div class="card card-custom bg-white border-white border-0 container " >
-        <div class="card card-custom bg-white border-white border-0" style="height: 450px">
-          <div class="card-custom-img" style="    background-image: url('https://c.tenor.com/QfuMtKn-AOcAAAAC/pokemon-pokeballs.gif');">
-            <div class="texto-encima" style="color: black;"><h2>Charmander</h2>
-            </div>
-          </div>
-          <div class="card-custom-avatar" >
-            <img class="img-fluid" src="../../../../assets/BALBA.png" alt="Avatar" />
-          </div>
-          <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title listTicard">Hierva</h4>
-            <p class="card-text textBio">
-              Es un Pokémon de tipo planta/veneno introducido en la primera generación. Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Kanto, junto a Squirtle y Charmander (excepto en Pokémon Amarillo). Destaca por ser el primer Pokémon de la Pokédex Nacional y la en la Pokédex de Kanto.
-            </p>
-            <h4 class="card-title listTicard">Biologia</h4>
-            <p class="card-text textBio">Bulbasaur es un Pokémon cuadrúpedo de color verde y manchas más oscuras de formas geométricas. Su cabeza representa cerca de un tercio de su cuerpo. En su frente se ubican tres manchas que pueden cambiar dependiendo del ejemplar. Tiene orejas pequeñas y puntiagudas. Sus ojos son grandes y de color rojo. Las patas son cortas con tres garras cada una. Este Pokémon tiene plantado un bulbo en el lomo desde que nace. Esta semilla crece y se desarrolla a lo largo del ciclo de vida de Bulbasaur a medida que suceden sus evoluciones. El bulbo absorbe y almacena la energía solar que Bulbasaur necesita para crecer. Dicen que cuanta más luz consuma la semilla, más olor producirá cuando se abra. Por otro lado, gracias a los nutrientes que el bulbo almacena, puede pasar varios días sin comer.
-
-              El bulbo de Bulbasaur le ayuda a defenderse de los enemigos y desde él puede disparar ataques tales como rayo solar y drenadoras entre otros.
-              
-              No es muy raro encontrarlo en jardines y zonas cercanas a fuentes de agua. También suele encontrarse en zonas boscosas profundas. Se los puede atraer con el aroma de las flores. Bulbasaur es omnívoro, aunque si no encuentra comida, su bulbo absorbe la energía del sol para hacer la fotosíntesis y le permite pasar días sin comer. Dicen que en las mañanas su bulbo se abre y atrapa al primer Pokémon que caiga por su irresistible olor.</p>
-            
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
-    </div>
+</main>

@@ -20,21 +20,29 @@
 }
 
 .texto-encima{
+    font-family: 'Press Start 2P', cursive;
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: px;
   
 }
-.texto-encima h2{
+.texto-encima {
     font-family: 'Press Start 2P', cursive;
-    color: white;
-    font-size: 17px;
+    color: rgb(253, 242, 242);
+    font-size: 15px;
 }
-.textOrde{
-    color: white;
-    font-size: 10px;
-    width: 50%;
-    float: left;
+
+.imgcentro{
+    position:absolute;
+    top: 4px;
+  height:150px;
+  width:150px;
+  z-index: 10;
+}
+.card-text{
+    color: rgb(255, 246, 246);
+    font-size: 13px;
+
 }
 .centrado{
     position: absolute;
@@ -42,13 +50,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.background-image {
+    background-color: #616161;
+    border-radius: 10px;
+}
 .card-custom {
     overflow: hidden;
     min-height: 450px;
     box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
   }
-  
   .card-custom-img {
     height: 200px;
     min-height: 200px;
@@ -100,8 +110,7 @@
 
 @media only screen and (max-width: 730px) {
 
-    .texto-encima h2{
-        font-family: 'Anybody', cursive;
+    .texto-encima{
         color: white;
         font-size: 16px;
     }
@@ -115,10 +124,9 @@
 }
 @media only screen and (max-width: 600px) {
 
-    .texto-encima h2{
-        font-family: 'Anybody', cursive;
+    .texto-encima{
         color: white;
-        font-size: 17px;
+        font-size: 15px;
     }
     .textOrde{
         width: 45%;
@@ -130,10 +138,9 @@
 }
 @media only screen and (max-width: 600px) {
 
-    .texto-encima h2{
-        font-family: 'Anybody', cursive;
+    .texto-encima {
         color: white;
-        font-size: 17px;
+        font-size: 15px;
     }
     .textOrde{
         width: 45%;
@@ -141,15 +148,18 @@
         color: white;
         font-size: 5px;
     }
+    .text-tarje{
+        width: 115%;
+        font-size: 11px;
+    }
 
 }
 
 @media only screen and (max-width: 574px) {
 
-    .texto-encima h2{
-        font-family: 'Anybody', cursive;
+    .texto-encima{
         color: white;
-        font-size: 17px;
+        font-size: 15px;
     }
     .textOrde{
         width: 50%;
@@ -157,12 +167,15 @@
         color: white;
         font-size: 8px;
     }
+    .text-tarje{
+        width: 115%;
+        font-size: 11px;
+    }
 
 }
 @media only screen and (max-width: 498px) {
 
-    .texto-encima h2{
-        font-family: 'Anybody', cursive;
+    .texto-encima{
         color: white;
         font-size: 13px;
     }
@@ -178,13 +191,17 @@
         width: 120px;
         height: 120px;
       }
+    .text-tarje{
+        width: 115%;
+        font-size: 9px;
+    }
 
 }
 
 @media only screen and (max-width: 400px) {
 
-    .texto-encima h2{
-        font-family: 'Anybody', cursive;
+    .texto-encima {
+        font-family: 'Press Start 2P', cursive;
         color: white;
         font-size: 12px;
     }
@@ -200,7 +217,19 @@
       width: 120px;
       height: 120px;
     }
- 
+    .imgcentro{
+      top: 4px;
+      height:50px;
+      width:50px;
+      z-index: 10;
+    }
+    .textOrde{
+        width: 60%;
+    }
+    .text-tarje{
+        width: 115%;
+        font-size: 7px;
+    }
 
 }
 

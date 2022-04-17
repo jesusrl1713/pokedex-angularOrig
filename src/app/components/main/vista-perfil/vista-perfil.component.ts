@@ -1,28 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import {PokemonService} from '../../../services/pokemon.service';
+
 @Component({
   selector: 'app-vista-perfil',
   templateUrl: './vista-perfil.component.html',
-  styleUrls: ['./vista-perfil.component.css']
+  styleUrls: ['./vista-perfil.component.css'],
+  providers: [PokemonService]
 })
 export class VistaPerfilComponent implements OnInit {
 
-  id: number;
-  informacion: string;
-  nombre: string;
-  contador: number;
-
-  constructor() { 
-    this.id = 1;
-    this.informacion = "Luovouhvoueghoñuhvouñoxoub ouxfboñufbuuxf nnpfhpnfigbibpgdnnbi{gnbipndipbipn ipkgnbkpmipkfhipk mfpigm ikp{nbjdkngfpi{ ndkingpi{n";
-    this.nombre = "Jesus Reyes Lara, 25 años";
-    this.contador = 10;
+  constructor(
+    private PokemonService: PokemonService
+  ) { 
   }
 
   ngOnInit(): void {
+    this.PokemonService.getPokemons().subscribe(
+      response => {
+      console.log(response);
+    });
   }
-  
-  reset(){
-    this.nombre = "";
-  }
+ 
 
 }

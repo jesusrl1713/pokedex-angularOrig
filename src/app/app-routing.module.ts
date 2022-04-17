@@ -10,9 +10,10 @@ const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'inicio'},
   {path: '', component: HeaderComponent, children: [
 
-  {path: 'inicio', component: VistaPrincComponent, data: {title: 'detalles'}},
-  {path: 'detalles', component: VistaDetalleComponent, data: {title: 'detalles'}},
+  {path: 'inicio', component: VistaPrincComponent, data: {title: 'Bienvendo'}},
+  {path: 'detalles/:name/:id', component: VistaDetalleComponent, data: {title: 'detalles'}},
   {path: 'usuario', component: VistaPerfilComponent, data: {title: 'usuario'}},
+
 ]},
 ];
 

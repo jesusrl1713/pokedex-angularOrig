@@ -1,68 +1,114 @@
-<body>
-    <h2>Hola</h2>
-    
-<div>
-    <div class="container">
-        <div class="row pt-5 m-auto">
-         <div class="col-md-6 col-lg-4 pb-4">
-    
-            <!-- Copy the content below until next comment -->
-            <div class="card card-custom bg-white border-white border-0">
-              <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
-              <div class="card-custom-avatar">
-                <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap <a href="https://getbootstrap.com/docs/4.0/components/card/#card-decks" target="_blank">card-decks</a> to align multiple cards nicely in a row.</p>
-              </div>
-              <div class="card-footer" style="background: inherit; border-color: inherit;">
-                <a href="#" class="btn btn -primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
+  <main>
+    <div class="">
+      <div class="card text-white" >
+        <img src="../../../../assets/portadazul1.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <div class="row">
+            <div class="col">
+              <div class="texto-encima" style="color: white;"><h2>{{name}}</h2></div>
+            </div>
+            <div class="col-3 col-lg-2 col-md-3 col-sm-3">
+              <span class="badge rounded-pill" style="font-size: 17px; background: rgba(255, 255, 255, 0.247); opacity: 0.95; color: rgb(241, 238, 238); font-weight: 800;"><i class="fab fa-slack-hash"></i> {{id}}  </span>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-lg-1 col-md-1 col-sm-2" style="border-spacing: 5px;"><span class="badge rounded-pill" style="font-size: 15px; background: rgba(255, 255, 255, 0.247); opacity: 0.95; color: rgb(241, 238, 238); padding: px;"><i class="fas fa-heart"></i> Agregar </span>              
+            </div>
+            <div class="col-3 col-lg-1 col-md-1 col-sm-2" style="word-spacing: 5px; margin-left: 2em;"><span class="badge rounded-pill" style="font-size: 15px; background: rgba(255, 255, 255, 0.247); opacity: 0.95; color: rgb(241, 238, 238);"><i class="fas fa-heart"></i> Agregar </span></div>
+          </div>
+            <div class="card-custom-avatar" >
+            <img class="img-fluid" src="../../../../assets/BALBA.png" alt="Avatar" />
+          </div>
+        </div>
+      </div>   
+      <br><br>
+      
+      <div class="card border-0">
+        <ul class="nav nav-justified">
+          <li class="nav-item cambio">
+            <a class="nav-link active" aria-current="page" href="#page-1">Informacion</a>
+          </li>
+          <li class="nav-item cambio">
+            <a class="nav-link" href="#page-2">Estadisticas</a>
+          </li>
+          <li class="nav-item cambio">
+            <a class="nav-link " aria-current="page" href="#page-3">Otra</a>
+          </li>
+        </ul>
+        <div class="card-body">
+          <div class="card-body" id="page-1" style="overflow-y: auto">
+            <h4 class="card-title listTicard">Informacion</h4>
+            <p class="card-text textBio">
+              Es un Pokémon de tipo planta/veneno introducido en la primera generación. Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Kanto, junto a Squirtle y Charmander (excepto en Pokémon Amarillo). Destaca por ser el primer Pokémon de la Pokédex Nacional y la en la Pokédex de Kanto.
+            </p>
+            <br>
+            <h4 class="card-title listTicard" id="page-2">Estadisticas</h4>
+            <div>          
+              <div class="row">
+                <div class="side">
+                  <div>Poder</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>2500</div>
+                </div>
+                <div class="side">
+                  <div>Fuerza</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>630</div>
+                </div>
+                <div class="side">
+                  <div>Amabilidad</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>150</div>
+                </div>
+                <div class="side">
+                  <div>Compañerismo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-2"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>60</div>
+                </div>
+                <div class="side">
+                  <div>Otra</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-1"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>200</div>
+                </div>
               </div>
             </div>
-
+            <br>
+            <h4 class="card-title listTicard" id="page-3">Otra</h4>
+            <p class="card-text textBio">
+              Es un Pokémon de tipo planta/veneno introducido en la primera generación. Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Kanto, junto a Squirtle y Charmander (excepto en Pokémon Amarillo). Destaca por ser el primer Pokémon de la Pokédex Nacional y la en la Pokédex de Kanto.
+            </p>
           </div>
-          <div class="col-md-6 col-lg-4 pb-4">
-    
-            <!-- Copy the content below until next comment -->
-            <div class="card card-custom bg-white border-white border-0">
-              <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
-              <div class="card-custom-avatar">
-                <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap <a href="https://getbootstrap.com/docs/4.0/components/card/#card-decks" target="_blank">card-decks</a> to align multiple cards nicely in a row.</p>
-              </div>
-              <div class="card-footer" style="background: inherit; border-color: inherit;">
-                <a href="#" class="btn btn -primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 col-lg-4 pb-4">
-    
-            <!-- Copy the content below until next comment -->
-            <div class="card card-custom bg-white border-white border-0">
-              <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
-              <div class="card-custom-avatar">
-                <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap <a href="https://getbootstrap.com/docs/4.0/components/card/#card-decks" target="_blank">card-decks</a> to align multiple cards nicely in a row.</p>
-              </div>
-              <div class="card-footer" style="background: inherit; border-color: inherit;">
-                <a href="#" class="btn btn -primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
-              </div>
-            </div>
-
-          </div>
-          </div>
-          </div>
-</div>
-
-</body>
+        </div>
+      </div>
+    </div>
+  </main>

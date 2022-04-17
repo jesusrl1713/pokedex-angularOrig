@@ -9,3 +9,10 @@ body{
     font-size: 18px; 
     font-family: 'Press Start 2P', cursive;
 }
+
+li a{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 10px;
+}
+
